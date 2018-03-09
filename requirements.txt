@@ -1,0 +1,8 @@
+Flask
+Flask-Bootstrap
+Flask-Login
+Flask-Moment
+Flask-PyMongo
+Flask-Table
+Flask-WTF
+pycrypto

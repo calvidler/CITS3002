@@ -1,0 +1,21 @@
+version: '2'
+services:
+  web_01:
+    container_name: chriscoin_user01
+    build: .
+    ports:
+     - "5000:5000"
+    volumes:
+     - .:/code
+  web_02:
+      container_name: chriscoin_user02
+      build: .
+      ports:
+       - "5001:5000"
+      volumes:
+       - .:/code
+  mongodb:
+    container_name: chriscoin_database
+    image: 'mongo'
+    ports:
+      - "27017:27017"

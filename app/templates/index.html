@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}Chriscoins{% endblock %}
+
+{% block page_content %}
+    <div class="page-header">
+        <h1>Hello, {% if name %}{{ name }}{% else %}Chriscoin User!{% endif %}!</h1>
+        {% if not known %}
+            <p>Pleased to meet you!</p>
+            </div>
+            {{ wtf.quick_form(form) }}
+        {% else %}
+            <p>Great to see you again!</p>
+            <p>Perhaps you would like to make a new <a href="{{ url_for('main.transactions')}}">transaction</a>?</p>
+            <a href="{{ url_for('main.logout') }}" class="btn btn-primary" role="button">Logout</a>
+        {% endif %}
+{% endblock %}

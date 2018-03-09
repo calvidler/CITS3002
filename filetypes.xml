@@ -1,0 +1,9 @@
+<application>
+  <component name="FileTypeManager" version="17">
+    <extensionMap>
+      <mapping pattern="requirements.txt" type="PLAIN_TEXT" />
+      <mapping pattern=".nojekyll" type="PLAIN_TEXT" />
+      <mapping ext="cpickle" type="PLAIN_TEXT" />
+    </extensionMap>
+  </component>
+</application>
