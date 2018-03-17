@@ -9,7 +9,7 @@ To start up this project, follows these steps:
 1. Ensure that you have [Docker](https://docs.docker.com/engine/installation/) 
 and [Docker Compose](https://docs.docker.com/compose/install/) installed on your local machine.
 2. Clone the repository for this project to a local path using the following command: <br>
-`git clone https://github.com/ScottMcCormack/CITS3002.git`
+`git clone https://github.com/calvidler/ChrisCoin.git`
 3. Run the following Docker Compose command to build the Docker environment: <br>
 `docker-compose up` <br>
 4. The success of the build will be shown in the console output. 
@@ -38,7 +38,7 @@ The following databases are used on this instance
     We can also connect to and query this database by running a Python script on our host machine. 
     Preliminary testing for this container was achieved by running a Jupyter Notebook on the host machine and 
     using Python Notebook files (.ipynb) to run queries. An example of this is uploaded in the 'notebook' directory at: <br>
-    https://github.com/ScottMcCormack/CITS3002/blob/master/notebooks/pymongo_testing.ipynb
+    https://github.com/calvidler/blob/master/notebooks/pymongo_testing.ipynb
 - **chriscoin_user01** (Exposed on [http://localhost:5000](http://localhost:5000)) <br>
 Web interface for a user (we assume this is **Alice**) that can register, login and transfer chriscoins to other users
 - **chriscoin_user02** (Exposed on [http://localhost:5001](http://localhost:5001)) <br>
